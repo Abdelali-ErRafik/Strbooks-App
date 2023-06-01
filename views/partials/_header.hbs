@@ -1,0 +1,50 @@
+<!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+	<li><a href="/stories/user/{{_id}}">My Story</a></li>
+	<li><a href="/stories/add">Add Story</a></li>
+	<li class="divider"></li>
+	<li><a href="/auth/logout">Logout</a></li>
+</ul>
+<!-- Dropdown Structure -->
+
+<!-- NavBar -->
+<div class="navbar-fixed">
+	<nav class="teal darken-1" >
+		<div class="nav-wrapper container">
+			<a href="/dashboard" class="brand-logo">
+				<i class="fas fa-book-reader left icon"></i>
+				StoryBooks
+			</a>
+			<a href="#" class="sidenav-trigger" data-target="mobile-nav">
+				<i class="material-icons">menu</i>
+			</a>
+			<ul class="right hide-on-med-and-down "  >
+				<li><a href="/dashboard"> Dashboard</a></li>
+				<li><a href="/stories">Stories</a></li>
+				<!-- Dropdown Trigger -->
+				<li><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="fa-solid fa-circle-user left"></i>{{name}}<i class="material-icons right">arrow_drop_down</i></a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<!-- NavBar -->
+
+<!-- NavBar Mobile -->
+	<!-- Dropdown Structure -->
+	<ul id="dropdown2" class="dropdown-content">
+		<li><a href="#!">Profile</a></li>
+		<li><a href="/stories/add">Add Story</a></li>
+		<li class="divider"></li>
+		<li><a href="/auth/logout">Logout</a></li>
+	</ul>
+
+<ul class="sidenav" id="mobile-nav">
+    <li><a href="/dashboard">Dashboard</a></li>
+    <li><a href="/stories">Stories</a></li>
+    <li><a href="/auth/logout">Logout</a></li>
+	<li>
+		<!-- Dropdown Trigger -->
+					<li><a class="dropdown-trigger " href="#!" data-target="dropdown2"><i class="fa-solid fa-circle-user left"></i> {{name}}<i class="material-icons right">arrow_drop_down</i></a></li>
+	</li>
+</ul>
+<!-- NavBar Mobile -->
